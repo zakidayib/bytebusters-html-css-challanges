@@ -1,0 +1,115 @@
+:root {
+  /* prmary colors */
+  --main-background-color: #141414;
+  --card-backgroud-color: #1f1f1f;
+  --buttons-background-color: #333333;
+  --hover-background-color: #c7fa51;
+
+  /* neautral colors */
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* 
+Weights: 500, 700, 900
+ */
+
+.parent {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+  padding: 20px;
+  background-color: var(--card-backgroud-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto 10px auto;
+}
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.card-info {
+  text-align: center;
+  margin: 15px;
+}
+
+.card-info h2 {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+.card-info h4 {
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: var(--hover-background-color);
+}
+
+.card-info p {
+  font-size: 12px;
+}
+
+.card-buttons {
+}
+
+.card-buttons button {
+  display: block;
+  width: 95%;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: none;
+  background-color: var(--buttons-background-color);
+  transition: 0.9s;
+  -webkit-transition: 0.9s;
+  -moz-transition: 0.9s;
+  -ms-transition: 0.9s;
+  -o-transition: 0.9s;
+}
+
+.card-buttons button a {
+  text-decoration: none;
+  color: white;
+}
+.card-buttons button:hover {
+  background-color: var(--hover-background-color);
+}
+
+.card-buttons button:hover a {
+  color: black;
+}
