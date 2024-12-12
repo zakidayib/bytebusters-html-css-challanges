@@ -1,0 +1,155 @@
+:root {
+  /* primary fonts */
+
+  /* main background color */
+  --Very-dark-blue: hsl(233, 47%, 7%);
+  /* card background-color */
+  --Dark-desaturated-blue: hsl(244, 38%, 16%);
+  /* (accent) */
+  --Soft-violet: hsl(277, 64%, 61%);
+
+  /* neutral colors */
+  /* (main heading, stats) */
+  --White: hsl(0, 0%, 100%);
+  /* (main paragraph) */
+  --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* (stat headings) */
+  --Slightly-transparent-white-one: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: var(--Slightly-transparent-white-one);
+}
+
+h1 {
+  color: var(--Slightly-transparent-white);
+}
+span {
+  color: var(--Soft-violet);
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-size: 16px;
+}
+
+.parent {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Very-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 60%;
+  display: flex;
+  background-color: var(--Dark-desaturated-blue);
+  height: 300px;
+}
+
+.image {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.image::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsl(277 64% 61% / 50%);
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.left-card {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  width: 65%;
+}
+
+.info h1 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.info p {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.numbers h1 {
+  font-size: 13px;
+  margin-bottom: 3px;
+  margin-top: 30px;
+}
+
+.numbers p {
+  font-size: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .info h1 {
+    font-size: 15px;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+  }
+
+  .image {
+    order: -1;
+    width: 100%;
+
+    height: 150px;
+  }
+
+  .left-card {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .info {
+    width: 84%;
+    text-align: center;
+  }
+
+  .numbers {
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+}
+
+/* @media screen and (max-width: 480px) {
+    
+  } */
